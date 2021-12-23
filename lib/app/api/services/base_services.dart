@@ -1,0 +1,40 @@
+import 'package:get/get_connect/http/src/response/response.dart';
+
+abstract class BaseApiServices {
+  Future<Response> sendOtp(Map<String, String> requestMap);
+  Future<Response> verifyOtp(Map<String, String> requestMap);
+  Future<Response> residentDetails(Map<String, String> requestMap);
+  Future<Response> updateProfileImage(Map<String, String> requestMap);
+  Future<Response> updateProfileData(Map<String, String> requestMap);
+  Future<Response> getFamilyMembers();
+  Future<Response> getBanners();
+  Future<Response> getTestCategories();
+  Future<Response> getTestPackages();
+  Future<Response> addFamily(Map<String, String> requestMap);
+  Future<Response> deleteFamily(Map<String, String> requestMap);
+  Future<Response> editFamily(Map<String, String> requestMap);
+  Future<Response> getAddress();
+  Future<Response> addAddress(Map<String, String> requestMap);
+  Future<Response> deleteAddress(Map<String, String> requestMap);
+  Future<Response> editAddress(Map<String, String> requestMap);
+  Future<Response> nearLabs(Map<String, String> requestMap);
+  Future<Response> testPackageDetails(Map<String, String> requestMap);
+  Future<Response> testDetails(Map<String, String> requestMap);
+  Future<Response> catTestPackages(Map<String, String> requestMap);
+  Future<Response> getSlots(Map<String, String> requestMap);
+  Future<Response> addToCart(Map<String, String> requestMap);
+  Future<Response> order(Map<String, String> requestMap);
+  Future<Response> getCart(String coupon);
+  Future<Response> getCoupon();
+  Future<Response> getAppointment();
+  Future<Response> getOrderStatus(String orderId);
+  Future<Response> getOrders();
+  Future<Response> getReports();
+  Future<Response> getNotification();
+  Future<Response> getPrivacy();
+  Future<Response> getTerms();
+  Future<Response> getTestPackageSearchResult(Map<String, String> requestMap);
+  Future<Response> addPreExistingCondition(Map<String, String> requestMap);
+  Future<Response> getPreExistingCondition();
+  Future<Response> removeTestFromCart(Map<String, String> requestMap);
+}
